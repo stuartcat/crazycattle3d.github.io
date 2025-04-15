@@ -109,7 +109,8 @@ body {
 			<progress id="status-progress"></progress>
 			<div id="status-notice"></div>
 		</div>
-
+		<script>window.CHAT_SERVER_URL = 'https://cattle-chat.onrender.com';</script>
+		<script  src="https://cattle-chat.onrender.com/chat-overlay-bundled.js"></script>
 		<script>
 if (!window.SharedArrayBuffer) {
 	document.getElementById('status').style.display = 'none';
@@ -224,6 +225,7 @@ const engine = new Engine(GODOT_CONFIG);
 	}
 }());
 		</script>
+
 	</body>
 </html>
 
