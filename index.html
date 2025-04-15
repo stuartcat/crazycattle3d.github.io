@@ -12,13 +12,6 @@ html, body, #canvas {
 	border: 0;
 }
 
-body {
-	color: white;
-	background-color: black;
-	overflow: hidden;
-	touch-action: none;
-}
-
 #canvas {
 	display: block;
 }
@@ -109,9 +102,7 @@ body {
 			<progress id="status-progress"></progress>
 			<div id="status-notice"></div>
 		</div>
-		<script src="https://cattle-chat.onrender.com/socket.io/socket.io.js"></script>
-		<script>window.CHAT_SERVER_URL = 'https://cattle-chat.onrender.com';</script>
-		<script src="https://cattle-chat.onrender.com/chat-overlay-bundled.js"></script>
+
 		<script>
 if (!window.SharedArrayBuffer) {
 	document.getElementById('status').style.display = 'none';
@@ -226,7 +217,9 @@ const engine = new Engine(GODOT_CONFIG);
 	}
 }());
 		</script>
-
+		<script src="https://cattle-chat.onrender.com/socket.io/socket.io.js"></script>
+		<script>window.CHAT_SERVER_URL = 'https://cattle-chat.onrender.com';</script>
+		<script src="https://cattle-chat.onrender.com/chat-overlay-bundled.js"></script>
 	</body>
 </html>
 
